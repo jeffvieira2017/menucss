@@ -1,3 +1,4 @@
+/* Menu Exemplo */
 body { background-color: cadetblue; }
 .menu { position: relative; width: 200px; margin: 0; padding: 0; background-color: darkgoldenrod; }
 .menu ul { list-style: none; margin: 0; padding: 0; }
