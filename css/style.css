@@ -1,0 +1,96 @@
+body { background-color: cadetblue; }
+.menu { position: relative; width: 200px; margin: 0; padding: 0; background-color: darkgoldenrod; }
+.menu ul { list-style: none; margin: 0; padding: 0; }
+.menu ul li { background-color: darkkhaki; height: auto; border-bottom: 1px #333 solid; }
+.menu ul li a {
+    width: 100%;
+    color: #333; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 14px;
+    text-decoration: none;
+    line-height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.menu ul li ul { display: none; }
+.menu ul li:hover ul { display: block; position: absolute; left: 200px; margin-top: -19px; }
+.menu ul li:hover ul .seta {
+    content: "";
+    position: absolute;
+    left: -5px;
+    margin-top: 5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+    border-right: 5px solid black;
+}
+.menu ul li:hover ul li { background-color: darksalmon; }
+
+.menu ul li:hover ul li ul { display: none; }
+.menu ul li:hover ul li:hover ul { display: block; position: relative; left: 0; top: 0; width: 200px; }
+.menu ul li:hover ul li:hover ul li { background-color: #333; }
+.menu ul li:hover ul li:hover ul li a { color: #fff; }
+
+/**
+*** Seta para ESQUERDA
+**/
+.seta-esquerda:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0; 
+    height: 0; 
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+    border-right: 5px solid blue; 
+  }
+  
+  /**
+  *** Seta para DIREITA
+  **/
+  .seta-direita:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0; 
+    height: 0; 
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid green;
+  }
+  
+  /**
+  *** Seta para CIMA
+  **/
+  .seta-cima:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0; 
+    height: 0; 
+  
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+  }
+  
+  /**
+  *** Seta para BAIXO
+  **/
+  .seta-baixo:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0; 
+    height: 0; 
+  
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #f00;
+  }
