@@ -23,7 +23,7 @@ body { background-color: cadetblue; }
     margin-top: 5px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent; 
-    border-right: 5px solid black;
+    border-right: 5px solid #333;
 }
 .menu ul li:hover ul li { background-color: darksalmon; }
 
@@ -31,6 +31,59 @@ body { background-color: cadetblue; }
 .menu ul li:hover ul li:hover ul { display: block; position: relative; left: 0; top: 0; width: 200px; }
 .menu ul li:hover ul li:hover ul li { background-color: #333; }
 .menu ul li:hover ul li:hover ul li a { color: #fff; }
+
+/**
+*** Menu Horizontal
+**/
+.menu-horizontal { width: 100%; margin: 25px 0; padding: 0; background-color: brown; }
+.menu-horizontal ul { list-style: none; margin: 0; padding: 0; }
+.menu-horizontal ul li { position: relative; float: left; background-color: coral; height: auto; border-bottom: 1px #333 solid; }
+.menu-horizontal ul li:hover { background-color: brown; }
+.menu-horizontal ul li a { 
+  width: 100%;
+  color: #fff; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-size: 14px;
+  text-decoration: none;
+  line-height: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.menu-horizontal ul li ul { display: none; }
+.menu-horizontal ul li:hover ul { display: block; background-color: coral; width: 250px; }
+.menu-horizontal ul li:hover ul .seta-menu-vertical {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 230px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  z-index: 999;
+}
+.menu-horizontal ul li:hover ul li { position: relative; border-bottom: 1px #333 solid; width: 100%; }
+.menu-horizontal ul li:hover ul li a { display: block; }
+
+.menu-horizontal ul li:hover ul li ul { display: none; }
+.menu-horizontal ul li:hover ul li:hover ul { 
+  display: block; 
+  position: absolute; 
+  background-color: brown;
+  left: 250px;
+  top: 0;
+  z-index: 999;
+}
+.menu-horizontal ul li:hover ul li:hover ul .seta-menu-horizontal {
+  content: "";
+  position: absolute;
+  left: -5px;
+  margin-top: 5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  border-right: 5px solid white;
+}
+.menu-horizontal ul li:hover ul li:hover ul li { display: block; width: 100%; background-color: brown; }
 
 /**
 *** Seta para ESQUERDA
