@@ -148,3 +148,8 @@ body { background-color: cadetblue; }
     border-right: 5px solid transparent;
     border-top: 5px solid #f00;
   }
+
+  /**
+  *** Ajax
+  **/
+#bt-paises, #teste { margin: 20px 0 !important; }
